@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: crtool
+      POSTGRES_PASSWORD: codereview
+      POSTGRES_DB: crtool
+    ports:
+    - 5432:5432
